@@ -1,18 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/lbp1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Número:"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lbNumero"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:text="Nuevo número"
+
+        android:textColor="#1E1E1E"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lbp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mensaje a enviar:"
+
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lbMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:text="Nuevo mensaje"
+
+        android:textColor="#1E1E1E"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtNumero"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:hint="Nuevo número"
+        android:inputType="numberDecimal"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar número"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:hint="Nuevo mensaje"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnAgregarMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar mensaje"
+        android:textSize="18sp" />
+</LinearLayout>
